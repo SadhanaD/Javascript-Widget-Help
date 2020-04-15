@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="holiday count down calculator">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-datetimepicker@2.5.21/jquery.datetimepicker.css" />
+
+    <link rel="stylesheet" href="css/clock.css">
+    <script type="text/javascript" src="js/timer.js"></script>
+    <title>Timer</title>
+</head>
+<body onload="initializeCalender()">
+    <h1>Timer</h1>
+    <div id="timer">
+        <table>
+            <tr>
+                <td>Select time to set a countdown :</td>
+                <td>
+                    <input type="text" id="demo" />
+                    <input type="button" onclick="startTimer()" value="start"/>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <div>
+            <span class="day">0</span>
+            <div class="desc">Days</div>
+        </div>
+        <div>
+            <span class="hour">0</span>
+            <div class="desc">Hours</div>
+        </div>
+        <div>
+            <span class="minute">0</span>
+            <div class="desc">Minutes</div>
+        </div>
+        <div>
+            <span class="second">0</span>
+            <div class="desc">Seconds</div>
+        </div>
+    </div>
+</body>
+</html>
